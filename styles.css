@@ -23,7 +23,7 @@ html, body {
     padding-right: 20px;
     border-radius: 3px;
     max-height: 500px;
-    width: 180px;
+    width: 140px;
     overflow: hidden;
     transition: max-height 0.3s ease, opacity 0.3s ease;
     opacity: 1;
@@ -45,7 +45,7 @@ h1 {
 h2 {
     font-size: 1.1rem;
     line-height: 2rem;
-    font-weight: 500;
+    font-weight: 400;
     margin: 0;
     text-decoration: none;
     /* color: white; */
@@ -93,6 +93,13 @@ a {
     transform: translateY(-3px);
 }
 
+
+.banner {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 60vh;
+}
 #hao-lee {
     display: flex;
     width: 100vw;
@@ -158,6 +165,9 @@ a {
 }
 #intro {
     height: 100vh;
+    background-image: url('media/banner.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 
@@ -181,6 +191,9 @@ iframe, .project-thumbnail {
 .vertical {
     max-width: 200px;
     height: 400px;
+}
+.fit {
+    object-fit: cover;
 }
 .project-description {
     display: flex;
