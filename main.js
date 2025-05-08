@@ -3,6 +3,15 @@ document.querySelectorAll('a').forEach(link => {
     link.setAttribute('target', '_blank');
 });
 
+// Banner hue change
+document.addEventListener('mousemove', (e) => {
+    const intro = document.getElementById('intro');
+    const y = e.clientY; // vertical position
+    const windowHeight = window.innerHeight;
+    const hue = (y / windowHeight) * 360; // map to 0–360 degrees
+    intro.style.filter = `hue-rotate(${hue}deg)`;
+});
+
 
 
 // Smooth nav link------------------------------------------
